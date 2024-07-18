@@ -1,0 +1,11 @@
+a = input("Enter The String: ")
+b = input("Enter The Sub String: ")
+
+if b in a:
+    c = a.find(b)
+    d = len(b)
+    e = a[c:c+d].capitalize()
+    result = a[:c] + e + a[c+d:]
+    print(result)
+else:
+    print("Error")
